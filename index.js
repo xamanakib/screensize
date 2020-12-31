@@ -12,9 +12,7 @@ document.getElementById("fourthInp").innerHTML = `${d} `;
 
 
 
-let sel =document.querySelector('#theFirst');
-sel=document.querySelector('.child');
-console.log(sel);
+
 document.onkeydown = function(e) {
   if(event.keyCode == 123) {
      return false;
