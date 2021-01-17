@@ -10,6 +10,20 @@ document.getElementById("SecondInp").innerHTML = `Height= ${b} px`;
 document.getElementById("thirdInp").innerHTML = `${c} `;
 document.getElementById("fourthInp").innerHTML = `${d} `;
 
+function promptMe() {
+   let code = prompt("Please Enter Your pin");
+
+   const pin = 54672;
+   if (code == pin) {
+      document.body.oncontextmenu = "return true";
+      
+
+   }
+   else {
+      location.reload();
+
+   }
+}
 
 
 
