@@ -63,12 +63,17 @@
         font-family: 'JetBrains Mono', monospace;
         color: crimson;
     }
+
     img {
         height: 47px;
         border-radius: 12px;
     }
 
-    .button{
+    
+
+
+
+    .button {
         width: fit-content;
         margin: auto;
     }
@@ -85,7 +90,8 @@
         animation: all .3s ease-in;
 
     }
-    .btn:hover{
+
+    .btn:hover {
         transform: scale(.95);
         background-color: rgb(248, 232, 232);
     }
@@ -97,41 +103,50 @@
         font-size: 25px;
         font-weight: 800;
     }
+
+
     @media only screen and (max-width: 967px) {
-        .size p{
+        .size p {
             width: 100%;
             font-size: 25px;
         }
-        .more{
+
+        .more {
             max-width: 100%;
-            
+
         }
-        .more h3{
+
+        .more h3 {
             font-size: 22px;
         }
-        .M-text{
+
+        .M-text {
             font-size: 20px;
         }
-        .container{
+
+        .container {
             height: fit-content;
         }
+
+
     }
 </style>
 
 <body oncontextmenu="return false">
     <div class="container">
         <h1>Heyy !!</h1>
+
         <div class="size">
             <p>Your current Screen: <br>
-                <span id="FirstInp"  class="M-text" >Width =...</span> &
-                <span id="SecondInp" class="M-text" >Height=...</span>
+                <span id="FirstInp" class="M-text">Width =...</span> &
+                <span id="SecondInp" class="M-text">Height=...</span><br>
+                <span class="img" id="run"><img src="BG.png" alt=""></span>
             </p>
         </div>
         <div class="more">
             <h3>More about your display</h3> <br>
             <span class="M-text">Screen colorDepth:</span> <span id="thirdInp" class="M-text">...</span> <br>
-            <span class="M-text">Screen pixelDepth:</span> <span id="fourthInp" class="M-text">...</span><br>
-                <span class="img" id="run"><img src="BG.png" alt=""></span>
+            <span class="M-text">Screen pixelDepth:</span> <span id="fourthInp" class="M-text">...</span>
         </div>
         <div class="button">
             <button id="bgnBtn" onclick="promptMe()" class="btn">Source</button>
@@ -139,6 +154,7 @@
         <footer>
             <p> MADE BY AKIB</p>
         </footer>
+
     </div>
 
 </body>
